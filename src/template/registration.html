@@ -1,0 +1,105 @@
+<section id="registration" class="section-registration">
+	<div class="container">
+		<div class="registration registration-tabs">
+			<h2 class="registration__title title">Регистрация</h2>
+			<div class="registration__steps steps">
+				<div class="steps-wrap steps-bl steps-tabs">
+						<div class="step step_1 steps-tabs__item" data-tab="tab-1">
+							<span>1</span>
+						</div>
+						<div class="points">
+							<span class="point"></span>
+							<span class="point point_small"></span>
+							<span class="point"></span>
+						</div>
+						<div class="step steps-tabs__item step_2" data-tab="tab-2">
+							<span>2</span>
+						</div>
+						<div class="points">
+							<span class="point"></span>
+							<span class="point point_small"></span>
+							<span class="point"></span>
+						</div>
+						<div class="step step_3 steps-tabs__item" data-tab="tab-3">
+							<span>3</span>
+						</div>
+				</div>
+				<div class="steps__text help help-tabs">
+					<div class="help__item help__item_1 help-tabs__item" data-tab="tab-1">
+						<span>Выберите тип аккаунта</span>
+					</div>
+					<div class="help__item help__item_2 help-tabs__item" data-tab="tab-2">
+						<span>Заполните поля для регистрации</span>
+					</div>
+					<div class="help__item help__item_3 help-tabs__item" data-tab="tab-3">
+						<span>Оставте один из предложеных контактов</span>
+					</div>
+				</div>
+			</div>
+			<div class="registration__order">
+				<form id="form-registration" class="form-registration form" action="#" method="post">
+					<div class="form-registration__tabs form-tabs">
+						<div class="form-tabs__item account-type input-wrap" data-tab="tab-1">
+							<div class="account-type__el">
+								<input type="radio" id="webmaster" name="account-name" value="webmaster">
+								<label for="webmaster">вебмастер</label>
+							</div>
+							<span class="account-type__text">или</span>
+							<div class="account-type__el">
+								<input type="radio" id="advertiser" name="account-name" value="advertiser">
+								<label for="advertiser">рекламодатель</label>
+							</div>
+							<button class="account-type__btn btn btn-form btn-form_dark js-tab"><span>Далее</span></button>
+
+						</div>
+						<div class="form-tabs__item input-wrap" data-tab="tab-2">
+							<div class="input-bl">
+								<i class="input-bl__fico fico fico-e-mail"></i>
+								<input name="email" type="e-mail" placeholder="E-mail">
+							</div>
+							<div class="input-bl">
+								<i class="input-bl__fico fico fico-key"></i>
+								<input id="password" name="password" type="password" placeholder="Пароль">
+							</div>
+							<div class="input-bl">
+								<i class="input-bl__fico fico fico-key"></i>
+								<input id="password-confirm" name="password-confirm" type="password" placeholder="Повторите пароль">
+							</div>
+							<div class="btn-wrap">
+								<button class="btn btn-form btn-form_dark js-tab"><span>Далее</span></button>
+							</div>
+						</div>
+						<div class="form-tabs__item input-wrap" data-tab="tab-3">
+							<div class="messangers-constructor">
+								<div class="messangers-constructor">
+								<div class="messangers-bl">
+									<div class="messangers-bl__button" data-state="add"></div>
+									<div class="input-bl messangers-wrap valid-ok">
+											<div class="messangers">
+												<div class="messanger-active">
+													<i class="messanger fico fico-skype" data-placeholder="Skype" data-name="skype"></i>
+												</div>
+												<div class="messangers-list">
+													<i class="messanger fico fico-vk" data-placeholder="ВКонтакте" data-name="vk"></i>
+													<i class="messanger fico fico-telegram" data-placeholder="Telegram" data-name="telegram"></i>
+													<i class="messanger fico fico-phone" data-placeholder="Телефон" data-name="phone"></i>
+													<i class="messangers-list__icon"></i>
+												</div>
+											</div>
+											<input name="skype" type="text" placeholder="Skype">
+									</div>
+								</div>
+							</div>
+							<div class="input-bl">
+								<i class="input-bl__fico fico fico-webmoney"></i>
+								<input id="webmoney" name="webmoney" type="text" placeholder="Webmoney (WMR)">
+							</div>
+							<button   class="form-authorization__btn btn btn-form btn-form_dark js-success"><span>Регистрация</span></button>
+
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

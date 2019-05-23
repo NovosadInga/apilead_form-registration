@@ -1,0 +1,148 @@
+.steps
+	&-bl
+		display: flex
+		justify-content: space-between
+		align-items: center
+.step
+	width: 62px
+	height: 62px
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #6a091a
+	font-size: 1.875rem
+	text-align: center
+	border-radius: 50%
+	span
+		display: block
+		width: 52px
+		height: 52px
+		border-radius: 50%
+		background: #bd9ca1
+		display: flex
+		align-items: center
+		justify-content: center
+	&.tab-active
+		border: 1px solid #fff
+		span
+			background: #fff
+			color: #d8163b
+			transition: 0.5s all
+.points
+	width: 56px
+	height: 8px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	+r(540)
+		width: 48px
+		justify-content: space-around
+.point
+	display: inline-block
+	width: 8px
+	height: 8px
+	border-radius: 50%
+	border: 1px solid #fff
+	&_small
+		width: 6px
+		height: 6px
+		+r(540)
+			display: none
+
+	
+.step-completed
+	cursor: pointer
+	span
+		background: #00cb18
+		color: $mainColor
+		transition: 0.5s all
+.help
+	min-height: 80px
+	position: relative
+	&__item
+		position: absolute
+		width: 100%
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		min-height: 75px
+		max-width: 336px
+		text-align: center
+		border-radius: 29px
+		color: $mainColor
+		font-size: 0.875rem
+		padding: 37px 20px 20px
+		visibility: none
+		margin: 0 auto
+		opacity: 0
+		transition: 0.2s opacity
+		&::before,
+		&::after
+			position: absolute
+			content: ""
+			display: block
+			box-sizing: border-box
+			left: 0
+			right: 0
+		&::before
+			top: 0
+		&::after
+			bottom: 0
+			border: 4px solid #000
+			background: rgba(255,255,255,0.2)
+			border-top: none
+			border-radius: 0 0 25px 25px
+		&_1
+			&::before
+				height: 45px
+				background: url(../img/svg/help2.svg)
+				background-size: 100%
+				transform: scaleX(-1)
+			&::after
+				top: 45px
+			&.tab-active
+				transform-origin: 5% 0%
+			+r(540)
+				&::before
+					height: 39px
+				&::after
+					top: 39px
+
+		&_2
+			&::before
+				height: 46px
+				background: url(../img/svg/help1.svg)
+				background-size: 100%
+			&::after
+				top: 46px
+			&.tab-active
+				transform-origin: 50% 0%
+			+r(540)
+				&::before
+					height: 39px
+				&::after
+					top: 39px
+		&_3
+			&::before
+				height: 45px
+				background: url(../img/svg/help2.svg)
+				background-size: 100%
+			&::after
+				top: 45px
+			&.tab-active
+				transform-origin: 95% 0%
+			+r(540)
+				&::before
+					height: 39px
+				&::after
+					top: 39px
+		&.tab-active
+			display: block
+			opacity: 1
+			animation: 0.6s 0.2s ScaleShow
+			transition: 0.6s 0.2s opacity
+			z-index: 2
+
+
+
+

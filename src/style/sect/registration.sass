@@ -1,0 +1,68 @@
+.section-registration
+	padding-top: 135px
+.registration
+	max-width: 350px
+	margin: 0 auto
+	&__title
+		margin-bottom: 45px
+.form-registration
+	max-width: 294px
+	margin: 0 auto
+	&__tabs
+		margin-top: 45px
+.account-type
+	text-transform: uppercase
+	text-align: left
+	&__text
+		color: rgba(255,255,255,0.4)
+		display: block
+		font-size: 0.875rem
+		padding-left: 35px
+		margin: 22px 0
+	&__btn
+		margin-top: 60px
+	&__el
+		font-size: 1.625rem
+		padding-left: 12px
+		label
+			display: block
+			position: relative
+			padding-left: 35px
+			cursor: pointer
+			color: rgba(255,255,255,0.4)
+			transition: 0.3s all
+			&::before,
+			&::after
+				position: absolute
+				content: ""
+				display: block
+				width: 19px
+				height: 19px
+				border-radius: 50%
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+			&::before
+				background: #fff
+			&::after
+				background: url(../img/svg/inpit-ok.svg) no-repeat
+				opacity: 0
+				transition: 0.3s all
+		input
+			display: none
+			&:checked
+				&+label
+					color: $mainColor
+					transition: 0.3s all
+					&::after
+						opacity: 1
+						transition: 0.3s all
+
+.form-tabs
+	&__item
+		display: none
+		padding-bottom: 30px
+		&.tab-active
+			display: block
+			animation: 1s OpacityShow
+
